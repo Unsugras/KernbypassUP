@@ -20,7 +20,7 @@
 }
 ;
 - (IBAction)usage {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://unsugras.top/page/718833628318007296"]];
 };
 -(IBAction)info{
     NSString *msg=@("这个软件主要是用于Kernbypass内核屏蔽的辅助工具，玩越狱的自然懂，没越狱的也不需要懂，官方的KernBypass是需要命令行进行操作的，需要将守护进程「changerootfs」挂起，来对一些软件进行内核级别屏蔽(和平精英:10分钟玩一次，玩一次封10分钟，再玩365天大礼包),那些什么修复黑屏补丁的，原理都是调用'changerootfs &'将守护进程挂起，怎么挂的我也没怎么看，但既然是挂起的，那总归有掉的时候，反正作者我就经常掉，还是手动来的方便。"
