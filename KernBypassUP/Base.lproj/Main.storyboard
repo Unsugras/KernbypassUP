@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bi4-0q-wCR">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LDZ-dA-3Py">
+            <objects>
+                <navigationController id="Bi4-0q-wCR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mCa-1O-KgM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4Hz-43-cO4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioa-yf-3bC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5254" y="101"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29e-H9-bfg">
+                                <rect key="frame" x="161" y="353" width="92" height="30"/>
+                                <state key="normal" title="点我挂起进程">
+                                    <color key="titleShadowColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLabel" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAq-hM-jEK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DzE-e1-87B">
+                                <rect key="frame" x="161" y="253" width="92" height="30"/>
+                                <state key="normal" title="点我查看说明"/>
+                                <connections>
+                                    <action selector="usage" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ix4-gh-SnO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="29e-H9-bfg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1KI-gJ-KMo"/>
+                            <constraint firstItem="29e-H9-bfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6TY-vB-IpB"/>
+                            <constraint firstItem="DzE-e1-87B" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="GCn-cQ-fvJ"/>
+                            <constraint firstItem="29e-H9-bfg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WMh-b0-6WY"/>
+                            <constraint firstItem="DzE-e1-87B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kAa-jC-TB4"/>
+                            <constraint firstItem="29e-H9-bfg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="txU-7l-IMd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Orl-XI-JBt">
+                        <barButtonItem key="leftBarButtonItem" title="设置属性" id="gPR-tE-WmW">
+                            <connections>
+                                <action selector="Modify" destination="BYZ-38-t0r" id="LGp-Lg-eOA"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="m1a-GB-J7m">
+                            <connections>
+                                <action selector="info" destination="BYZ-38-t0r" id="gN4-bJ-1LJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4418.840579710145" y="100.2717391304348"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="info.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,20 @@
+PODS:
+  - MBProgressHUD (1.2.0)
+  - NMSSH (2.3.1)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.2.0)
+  - NMSSH
+
+SPEC REPOS:
+  trunk:
+    - MBProgressHUD
+    - NMSSH
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  NMSSH: cd689ae535a1581a6dd9fd4600ff71247df510a6
+
+PODFILE CHECKSUM: f55331fcd2acbf1491921195c64c4d8e1e0b7323
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1464FC0548391CEC1A809CA05F15E66E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0E7DCCB15EF02B73D2FD6B30929E81 /* Foundation.framework */; };
+		19D51E869F51F27F2C27957E6EEBD03B /* NMSSHChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 25A30F70A464EA55148E569DBF71FD8C /* NMSSHChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB552F495ADF6D6295B990574FD10DC /* NMSFTPFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 197C63BBF5E3BBF3A036B0DE52FC2B84 /* NMSFTPFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CAA4F73CDD0B86B3DBD6E9247FEE033 /* socket_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF14AE9F9AD2AA6092F18292B88B3FA /* socket_helper.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3D9050BCB55B8D646927C4549C302B40 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE70F593F16E3D6C42E90F3DF38A0C1 /* CFNetwork.framework */; };
+		469A87DF1B45F4D2ADA551E3580BBBF3 /* NMSSHHostConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D3396F706215DDE283AFBEDEC2DC3A /* NMSSHHostConfig.m */; };
+		4AFD648816FCA9DD29E5AA921AF1445F /* NMSSHHostConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 256FF1CB2B7BFECB8AD940B2F324E452 /* NMSSHHostConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		532D589C7C5744B6E160F53D6007B761 /* libssh2_sftp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D6B702BA3FB3CBD1252174F90343048 /* libssh2_sftp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 369CD5D06A1743D4058B86CC0D572F8D /* QuartzCore.framework */; };
+		6920CB6604CF3516B7C17C1779812BBF /* libssh2.h in Headers */ = {isa = PBXBuildFile; fileRef = 183A3FC58508C2228B46168FE7C5CD73 /* libssh2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C0D9D2FA8122AEFA4506B63D864766F /* NMSSH-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C1EF54221EA802F2C8876EAA990B1AC6 /* NMSSH-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2E3348E3F17FC7EA5F8C84D486EE8C /* MBProgressHUD.m */; };
+		7E246F29AF39EBB350B923E4B7D556EF /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 17314E0402131EB99BA5AA13F1924886 /* NMSSH.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E9691DF02583ED040FEF726B0708ADC /* libssh2_publickey.h in Headers */ = {isa = PBXBuildFile; fileRef = 21273AE19823358714C0BA102E5B21F1 /* libssh2_publickey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8096969024AD38636BC46F3706311ECC /* NMSSHConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AAB9F9C5138C3D833E8378473FB2C2B /* NMSSHConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81B53124C082A6F1ABA78815ED12D993 /* NMSSHConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8F09D08BCDEE7A081C7942B341CFE9 /* NMSSHConfig.m */; };
+		81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 91172A3CE5E601A909E8EB03A47E798A /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8401B30FFF6B7667CA5159E78F3D8478 /* socket_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B60A3B234DAC0969552FC81C217ED5 /* socket_helper.m */; };
+		8850AB90BA09F08BD6571A1A34952E7F /* Pods-KernBypassUP-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABF5CC7759D44E8AFBE4932A8CDABF35 /* Pods-KernBypassUP-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B00E157C1F7CFAF9641381EF1DD2FC2 /* NMSSH-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6127AE626C563B1CCA5B495E93FA4A94 /* NMSSH-dummy.m */; };
+		8B52563FF062E367335E85AE2D1A9810 /* NMSSH.h in Headers */ = {isa = PBXBuildFile; fileRef = 64B8E4F66CEA327E8B662DFB752A5AE3 /* NMSSH.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042C81E7AA952C3AEBD73E6BF1DCF57D /* CoreGraphics.framework */; };
+		B37900F37FCFDC18DA3035BEFE1163A5 /* NMSSHSession.h in Headers */ = {isa = PBXBuildFile; fileRef = B010CE4FC66D00D8ED0A2D2A1B719173 /* NMSSHSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9276FB7D1429298ABEB5D911C0C3B9A /* NMSSHSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBD03D11AF0F9CAA616A17EF9CBE22 /* NMSSHSession.m */; };
+		BC1D0BB1970421AF15DE1A5D1B23971F /* NMSSHLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9842BD9C34F23D41DF46FAB1993DD061 /* NMSSHLogger.m */; };
+		C1585EC7BD665B46AA207C0A66E39DA9 /* NMSSHSessionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F877F93926D7EACF54C0D3252E6605E3 /* NMSSHSessionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C89CA434A31F12A86A65831DDC05EA27 /* NMSFTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF553D266F7C4DE0C4120C7F0D3C051 /* NMSFTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D41750BE93128FC52B9EC5AB73199766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0E7DCCB15EF02B73D2FD6B30929E81 /* Foundation.framework */; };
+		D990C9A40C1B262FAC2E08C5259AE1AB /* NMSFTPFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D3370D452958175EFF4481102FE5718A /* NMSFTPFile.m */; };
+		DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432A2EB5414063139F78FF7C126804C /* MBProgressHUD-dummy.m */; };
+		DC345FD90ED3417C300F27734D7BC5A6 /* NMSSHChannelDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D49E29ED16F2C9C165D18F0BF2754E5A /* NMSSHChannelDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD6FC78E6E7FF3C97381B6D9D67F24FC /* NMSSH+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0339BB194EC8FCB02EAB11E6ED7421E7 /* NMSSH+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		DFA91B53AF3534B41E308F5805DC0915 /* NMSSHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F0A1D6B9DA18B41887B5DEF65CE2AB5A /* NMSSHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D4D59D22FF9D274E499F9AAD347CF3 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBDCC0A723C1C478F14AB2917E19701A /* NMSSHChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2EDCECD7D18A64F6BCC89A3EF17F48 /* NMSSHChannel.m */; };
+		EEBFBCAE7BF73868B549B276B3156845 /* NMSFTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B5EA57EE4F44F9C49349476B396EF1 /* NMSFTP.m */; };
+		F19BDC21EE15809B9FB82D0142D4F347 /* Pods-KernBypassUP-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1153C5B80E0F554755050F045D8B9C /* Pods-KernBypassUP-dummy.m */; };
+		FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0E7DCCB15EF02B73D2FD6B30929E81 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EF2952D92E41FB5F2AC96D9A8296905 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E36E3194AA9B06BC5873E083ED10B917;
+			remoteInfo = NMSSH;
+		};
+		B5C2A85A7598DC170B66B435FBDCEFB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82B0A41D3031FF27D78E17B0A9A46FB0;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01740991F3CD0031262681CE5240C3DB /* NMSSH-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
+		0339BB194EC8FCB02EAB11E6ED7421E7 /* NMSSH+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NMSSH+Protected.h"; path = "NMSSH/Config/NMSSH+Protected.h"; sourceTree = "<group>"; };
+		042C81E7AA952C3AEBD73E6BF1DCF57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		0913D65A530052FBA62BFEEA2DCB8626 /* NMSSH.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NMSSH.modulemap; sourceTree = "<group>"; };
+		0D77ACC83FE1B413F35B18B5C0A04D0D /* MBProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		0DF14AE9F9AD2AA6092F18292B88B3FA /* socket_helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket_helper.h; path = NMSSH/Config/socket_helper.h; sourceTree = "<group>"; };
+		11B5EA57EE4F44F9C49349476B396EF1 /* NMSFTP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTP.m; path = NMSSH/NMSFTP.m; sourceTree = "<group>"; };
+		17314E0402131EB99BA5AA13F1924886 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = NMSSH/NMSSH.h; sourceTree = "<group>"; };
+		183A3FC58508C2228B46168FE7C5CD73 /* libssh2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2.h"; sourceTree = "<group>"; };
+		197C63BBF5E3BBF3A036B0DE52FC2B84 /* NMSFTPFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTPFile.h; path = NMSSH/NMSFTPFile.h; sourceTree = "<group>"; };
+		1CFFF9D483E6C840FF491B26899C03FF /* NMSSH.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.release.xcconfig; sourceTree = "<group>"; };
+		2104BB7036436AF29C1393890FF4F3F1 /* Pods-KernBypassUP.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KernBypassUP.modulemap"; sourceTree = "<group>"; };
+		21273AE19823358714C0BA102E5B21F1 /* libssh2_publickey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_publickey.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_publickey.h"; sourceTree = "<group>"; };
+		23D3396F706215DDE283AFBEDEC2DC3A /* NMSSHHostConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHHostConfig.m; path = NMSSH/NMSSHHostConfig.m; sourceTree = "<group>"; };
+		256FF1CB2B7BFECB8AD940B2F324E452 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHHostConfig.h; path = NMSSH/NMSSHHostConfig.h; sourceTree = "<group>"; };
+		25A30F70A464EA55148E569DBF71FD8C /* NMSSHChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannel.h; path = NMSSH/NMSSHChannel.h; sourceTree = "<group>"; };
+		27D76B89472F02760D55DFB639BF5BA4 /* MBProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		289D1FA30B2E6833B9765689B15A1646 /* Pods-KernBypassUP-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KernBypassUP-Info.plist"; sourceTree = "<group>"; };
+		28D4D59D22FF9D274E499F9AAD347CF3 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		33F345EF813F763F656DF684D6E2A31E /* Pods_KernBypassUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KernBypassUP.framework; path = "Pods-KernBypassUP.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		369CD5D06A1743D4058B86CC0D572F8D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		3A1153C5B80E0F554755050F045D8B9C /* Pods-KernBypassUP-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KernBypassUP-dummy.m"; sourceTree = "<group>"; };
+		3C7E4EDC9AF7B512D8E0B1FB517E0672 /* Pods-KernBypassUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KernBypassUP.release.xcconfig"; sourceTree = "<group>"; };
+		3CE70F593F16E3D6C42E90F3DF38A0C1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		3D6B702BA3FB3CBD1252174F90343048 /* libssh2_sftp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = libssh2_sftp.h; path = "NMSSH-iOS/Libraries/include/libssh2/libssh2_sftp.h"; sourceTree = "<group>"; };
+		4365B01C82D77CE616567306ED47CB22 /* Pods-KernBypassUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KernBypassUP.debug.xcconfig"; sourceTree = "<group>"; };
+		455F3FF1510749C6C2016E4362DD4FBA /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		5A0E7DCCB15EF02B73D2FD6B30929E81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A2E3348E3F17FC7EA5F8C84D486EE8C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5AAB9F9C5138C3D833E8378473FB2C2B /* NMSSHConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHConfig.h; path = NMSSH/NMSSHConfig.h; sourceTree = "<group>"; };
+		6127AE626C563B1CCA5B495E93FA4A94 /* NMSSH-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
+		6473BC1C3AD5A0228023F326745BBA30 /* NMSSH-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NMSSH-Info.plist"; sourceTree = "<group>"; };
+		64B8E4F66CEA327E8B662DFB752A5AE3 /* NMSSH.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSH.h; path = "NMSSH-iOS/NMSSH.h"; sourceTree = "<group>"; };
+		6EEC77F51858349E93EF74E23C115C64 /* NMSSH.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMSSH.framework; path = NMSSH.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82B67FDEC0E5200F3AA7AA6D154BF84A /* NMSSH.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMSSH.debug.xcconfig; sourceTree = "<group>"; };
+		8432A2EB5414063139F78FF7C126804C /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		85EAC67153195D602A3FC0445D2B4A46 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "NMSSH-iOS/Libraries/lib/libssl.a"; sourceTree = "<group>"; };
+		8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91172A3CE5E601A909E8EB03A47E798A /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		9842BD9C34F23D41DF46FAB1993DD061 /* NMSSHLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHLogger.m; path = NMSSH/Config/NMSSHLogger.m; sourceTree = "<group>"; };
+		9CF553D266F7C4DE0C4120C7F0D3C051 /* NMSFTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSFTP.h; path = NMSSH/NMSFTP.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D9DA9B5A86DA8B43E9B3249144DC23B /* Pods-KernBypassUP-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KernBypassUP-frameworks.sh"; sourceTree = "<group>"; };
+		A0BBD03D11AF0F9CAA616A17EF9CBE22 /* NMSSHSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHSession.m; path = NMSSH/NMSSHSession.m; sourceTree = "<group>"; };
+		ABF5CC7759D44E8AFBE4932A8CDABF35 /* Pods-KernBypassUP-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KernBypassUP-umbrella.h"; sourceTree = "<group>"; };
+		AE90D134CD5A26F19789068DC69865EB /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "NMSSH-iOS/Libraries/lib/libcrypto.a"; sourceTree = "<group>"; };
+		B010CE4FC66D00D8ED0A2D2A1B719173 /* NMSSHSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSession.h; path = NMSSH/NMSSHSession.h; sourceTree = "<group>"; };
+		B27C449862A16AA75DEE1F3E3713107D /* Pods-KernBypassUP-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KernBypassUP-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE2EDCECD7D18A64F6BCC89A3EF17F48 /* NMSSHChannel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHChannel.m; path = NMSSH/NMSSHChannel.m; sourceTree = "<group>"; };
+		BEAC66808A9981F2ECDD0379C6909442 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		C1EF54221EA802F2C8876EAA990B1AC6 /* NMSSH-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMSSH-umbrella.h"; sourceTree = "<group>"; };
+		C3B60A3B234DAC0969552FC81C217ED5 /* socket_helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = socket_helper.m; path = NMSSH/Config/socket_helper.m; sourceTree = "<group>"; };
+		CB4822A1DC0DBDCD95B1EDB03B76B4E7 /* libssh2.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssh2.a; path = "NMSSH-iOS/Libraries/lib/libssh2.a"; sourceTree = "<group>"; };
+		D3370D452958175EFF4481102FE5718A /* NMSFTPFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSFTPFile.m; path = NMSSH/NMSFTPFile.m; sourceTree = "<group>"; };
+		D49E29ED16F2C9C165D18F0BF2754E5A /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHChannelDelegate.h; path = NMSSH/Protocols/NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		D91CA3DE357131B8D2399AD0784B597A /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		DD8F09D08BCDEE7A081C7942B341CFE9 /* NMSSHConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMSSHConfig.m; path = NMSSH/NMSSHConfig.m; sourceTree = "<group>"; };
+		DFFF34694D976DC0C2D9796FCBC1BF7E /* Pods-KernBypassUP-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KernBypassUP-acknowledgements.plist"; sourceTree = "<group>"; };
+		F0A1D6B9DA18B41887B5DEF65CE2AB5A /* NMSSHLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHLogger.h; path = NMSSH/Config/NMSSHLogger.h; sourceTree = "<group>"; };
+		F877F93926D7EACF54C0D3252E6605E3 /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMSSHSessionDelegate.h; path = NMSSH/Protocols/NMSSHSessionDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B6AA1D143252308E5FFDDB129FC9764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1464FC0548391CEC1A809CA05F15E66E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A601994621C892656F60D1A1292A9565 /* CoreGraphics.framework in Frameworks */,
+				FF0EE7E6F869E55DA268F25622674EB9 /* Foundation.framework in Frameworks */,
+				64F46B6A8DBA885AF570A54A082D1BAA /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9C7CE4D3E906036737FAE8A88AEC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9050BCB55B8D646927C4549C302B40 /* CFNetwork.framework in Frameworks */,
+				D41750BE93128FC52B9EC5AB73199766 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EDF4AA3C77626EB6641260753CB54C /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				183A3FC58508C2228B46168FE7C5CD73 /* libssh2.h */,
+				21273AE19823358714C0BA102E5B21F1 /* libssh2_publickey.h */,
+				3D6B702BA3FB3CBD1252174F90343048 /* libssh2_sftp.h */,
+				9CF553D266F7C4DE0C4120C7F0D3C051 /* NMSFTP.h */,
+				11B5EA57EE4F44F9C49349476B396EF1 /* NMSFTP.m */,
+				197C63BBF5E3BBF3A036B0DE52FC2B84 /* NMSFTPFile.h */,
+				D3370D452958175EFF4481102FE5718A /* NMSFTPFile.m */,
+				64B8E4F66CEA327E8B662DFB752A5AE3 /* NMSSH.h */,
+				17314E0402131EB99BA5AA13F1924886 /* NMSSH.h */,
+				0339BB194EC8FCB02EAB11E6ED7421E7 /* NMSSH+Protected.h */,
+				25A30F70A464EA55148E569DBF71FD8C /* NMSSHChannel.h */,
+				BE2EDCECD7D18A64F6BCC89A3EF17F48 /* NMSSHChannel.m */,
+				D49E29ED16F2C9C165D18F0BF2754E5A /* NMSSHChannelDelegate.h */,
+				5AAB9F9C5138C3D833E8378473FB2C2B /* NMSSHConfig.h */,
+				DD8F09D08BCDEE7A081C7942B341CFE9 /* NMSSHConfig.m */,
+				256FF1CB2B7BFECB8AD940B2F324E452 /* NMSSHHostConfig.h */,
+				23D3396F706215DDE283AFBEDEC2DC3A /* NMSSHHostConfig.m */,
+				F0A1D6B9DA18B41887B5DEF65CE2AB5A /* NMSSHLogger.h */,
+				9842BD9C34F23D41DF46FAB1993DD061 /* NMSSHLogger.m */,
+				B010CE4FC66D00D8ED0A2D2A1B719173 /* NMSSHSession.h */,
+				A0BBD03D11AF0F9CAA616A17EF9CBE22 /* NMSSHSession.m */,
+				F877F93926D7EACF54C0D3252E6605E3 /* NMSSHSessionDelegate.h */,
+				0DF14AE9F9AD2AA6092F18292B88B3FA /* socket_helper.h */,
+				C3B60A3B234DAC0969552FC81C217ED5 /* socket_helper.m */,
+				D5FAA4C72D09776BEC157551D6ACED38 /* Frameworks */,
+				550C5783814C49998B910C8A3BB876DF /* Support Files */,
+			);
+			name = NMSSH;
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		321AB14D765C8D70196B22B6BF1E8FA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */,
+				6EEC77F51858349E93EF74E23C115C64 /* NMSSH.framework */,
+				33F345EF813F763F656DF684D6E2A31E /* Pods_KernBypassUP.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42240992AFE4CEFAE43943198F0ED4D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D91CA3DE357131B8D2399AD0784B597A /* MBProgressHUD.modulemap */,
+				8432A2EB5414063139F78FF7C126804C /* MBProgressHUD-dummy.m */,
+				455F3FF1510749C6C2016E4362DD4FBA /* MBProgressHUD-Info.plist */,
+				BEAC66808A9981F2ECDD0379C6909442 /* MBProgressHUD-prefix.pch */,
+				91172A3CE5E601A909E8EB03A47E798A /* MBProgressHUD-umbrella.h */,
+				27D76B89472F02760D55DFB639BF5BA4 /* MBProgressHUD.debug.xcconfig */,
+				0D77ACC83FE1B413F35B18B5C0A04D0D /* MBProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		550C5783814C49998B910C8A3BB876DF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0913D65A530052FBA62BFEEA2DCB8626 /* NMSSH.modulemap */,
+				6127AE626C563B1CCA5B495E93FA4A94 /* NMSSH-dummy.m */,
+				6473BC1C3AD5A0228023F326745BBA30 /* NMSSH-Info.plist */,
+				01740991F3CD0031262681CE5240C3DB /* NMSSH-prefix.pch */,
+				C1EF54221EA802F2C8876EAA990B1AC6 /* NMSSH-umbrella.h */,
+				82B67FDEC0E5200F3AA7AA6D154BF84A /* NMSSH.debug.xcconfig */,
+				1CFFF9D483E6C840FF491B26899C03FF /* NMSSH.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NMSSH";
+			sourceTree = "<group>";
+		};
+		7F24C594F973BE06FE2D72C9A6602FD2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA801C01015E60616ED222F5303EFD12 /* Pods-KernBypassUP */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E52617C95509563893551BE74726BDA4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA801C01015E60616ED222F5303EFD12 /* Pods-KernBypassUP */ = {
+			isa = PBXGroup;
+			children = (
+				2104BB7036436AF29C1393890FF4F3F1 /* Pods-KernBypassUP.modulemap */,
+				B27C449862A16AA75DEE1F3E3713107D /* Pods-KernBypassUP-acknowledgements.markdown */,
+				DFFF34694D976DC0C2D9796FCBC1BF7E /* Pods-KernBypassUP-acknowledgements.plist */,
+				3A1153C5B80E0F554755050F045D8B9C /* Pods-KernBypassUP-dummy.m */,
+				9D9DA9B5A86DA8B43E9B3249144DC23B /* Pods-KernBypassUP-frameworks.sh */,
+				289D1FA30B2E6833B9765689B15A1646 /* Pods-KernBypassUP-Info.plist */,
+				ABF5CC7759D44E8AFBE4932A8CDABF35 /* Pods-KernBypassUP-umbrella.h */,
+				4365B01C82D77CE616567306ED47CB22 /* Pods-KernBypassUP.debug.xcconfig */,
+				3C7E4EDC9AF7B512D8E0B1FB517E0672 /* Pods-KernBypassUP.release.xcconfig */,
+			);
+			name = "Pods-KernBypassUP";
+			path = "Target Support Files/Pods-KernBypassUP";
+			sourceTree = "<group>";
+		};
+		C39765CF07CAC8D67FFB855576BC512D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				28D4D59D22FF9D274E499F9AAD347CF3 /* MBProgressHUD.h */,
+				5A2E3348E3F17FC7EA5F8C84D486EE8C /* MBProgressHUD.m */,
+				42240992AFE4CEFAE43943198F0ED4D0 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				E778495CEA39522BA100FDB493A85E22 /* Pods */,
+				321AB14D765C8D70196B22B6BF1E8FA4 /* Products */,
+				7F24C594F973BE06FE2D72C9A6602FD2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D5FAA4C72D09776BEC157551D6ACED38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE90D134CD5A26F19789068DC69865EB /* libcrypto.a */,
+				CB4822A1DC0DBDCD95B1EDB03B76B4E7 /* libssh2.a */,
+				85EAC67153195D602A3FC0445D2B4A46 /* libssl.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E52617C95509563893551BE74726BDA4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3CE70F593F16E3D6C42E90F3DF38A0C1 /* CFNetwork.framework */,
+				042C81E7AA952C3AEBD73E6BF1DCF57D /* CoreGraphics.framework */,
+				5A0E7DCCB15EF02B73D2FD6B30929E81 /* Foundation.framework */,
+				369CD5D06A1743D4058B86CC0D572F8D /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E778495CEA39522BA100FDB493A85E22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C39765CF07CAC8D67FFB855576BC512D /* MBProgressHUD */,
+				04EDF4AA3C77626EB6641260753CB54C /* NMSSH */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		88A7EC217172610B12D6C101EA91E5C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8850AB90BA09F08BD6571A1A34952E7F /* Pods-KernBypassUP-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81B9E2F21B1EF9FE4E769103108DEA8A /* MBProgressHUD-umbrella.h in Headers */,
+				EB2A4C29BE958CCB03B3FD9FAB927F1F /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F124652497EAE7539BA9718E51FA2BE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6920CB6604CF3516B7C17C1779812BBF /* libssh2.h in Headers */,
+				7E9691DF02583ED040FEF726B0708ADC /* libssh2_publickey.h in Headers */,
+				532D589C7C5744B6E160F53D6007B761 /* libssh2_sftp.h in Headers */,
+				C89CA434A31F12A86A65831DDC05EA27 /* NMSFTP.h in Headers */,
+				2BB552F495ADF6D6295B990574FD10DC /* NMSFTPFile.h in Headers */,
+				DD6FC78E6E7FF3C97381B6D9D67F24FC /* NMSSH+Protected.h in Headers */,
+				6C0D9D2FA8122AEFA4506B63D864766F /* NMSSH-umbrella.h in Headers */,
+				7E246F29AF39EBB350B923E4B7D556EF /* NMSSH.h in Headers */,
+				8B52563FF062E367335E85AE2D1A9810 /* NMSSH.h in Headers */,
+				19D51E869F51F27F2C27957E6EEBD03B /* NMSSHChannel.h in Headers */,
+				DC345FD90ED3417C300F27734D7BC5A6 /* NMSSHChannelDelegate.h in Headers */,
+				8096969024AD38636BC46F3706311ECC /* NMSSHConfig.h in Headers */,
+				4AFD648816FCA9DD29E5AA921AF1445F /* NMSSHHostConfig.h in Headers */,
+				DFA91B53AF3534B41E308F5805DC0915 /* NMSSHLogger.h in Headers */,
+				B37900F37FCFDC18DA3035BEFE1163A5 /* NMSSHSession.h in Headers */,
+				C1585EC7BD665B46AA207C0A66E39DA9 /* NMSSHSessionDelegate.h in Headers */,
+				3CAA4F73CDD0B86B3DBD6E9247FEE033 /* socket_helper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				8F0EBAB2761523F18BB73EB4DC5CBEC3 /* Headers */,
+				D2F84DC2E2DB3628B17B3841F2837477 /* Sources */,
+				1AA3C16B4B3AB40CA74BDDADEF5C143A /* Frameworks */,
+				435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 8B8FAB0D627B17EDE1366984278705D9 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AAD5857A277C3A26E7C7A34C2F2E51E /* Pods-KernBypassUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49070A7F26B02B75758E2C02E3B1BCCC /* Build configuration list for PBXNativeTarget "Pods-KernBypassUP" */;
+			buildPhases = (
+				88A7EC217172610B12D6C101EA91E5C8 /* Headers */,
+				54B0B8742E879C8EBE283FDA1B5E37BB /* Sources */,
+				0B6AA1D143252308E5FFDDB129FC9764 /* Frameworks */,
+				69B0828946E8766E97C2E5266B0DB83B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09691B7B944750EA93FA4EDD545E9684 /* PBXTargetDependency */,
+				6FDBCB5F965F9EA314D32F45BEF7F012 /* PBXTargetDependency */,
+			);
+			name = "Pods-KernBypassUP";
+			productName = "Pods-KernBypassUP";
+			productReference = 33F345EF813F763F656DF684D6E2A31E /* Pods_KernBypassUP.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E36E3194AA9B06BC5873E083ED10B917 /* NMSSH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BBCD1F5C5BC6E0D4002E2D4AD574B7 /* Build configuration list for PBXNativeTarget "NMSSH" */;
+			buildPhases = (
+				F124652497EAE7539BA9718E51FA2BE6 /* Headers */,
+				30BD370484EAB92324639FAE690FE4C3 /* Sources */,
+				7B9C7CE4D3E906036737FAE8A88AEC46 /* Frameworks */,
+				B3EB352CBF99482561E4A885B1AE7EEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NMSSH;
+			productName = NMSSH;
+			productReference = 6EEC77F51858349E93EF74E23C115C64 /* NMSSH.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 321AB14D765C8D70196B22B6BF1E8FA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */,
+				E36E3194AA9B06BC5873E083ED10B917 /* NMSSH */,
+				8AAD5857A277C3A26E7C7A34C2F2E51E /* Pods-KernBypassUP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		435BF4D16B2F9CAB6E7F883F30E32B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69B0828946E8766E97C2E5266B0DB83B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3EB352CBF99482561E4A885B1AE7EEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30BD370484EAB92324639FAE690FE4C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBFBCAE7BF73868B549B276B3156845 /* NMSFTP.m in Sources */,
+				D990C9A40C1B262FAC2E08C5259AE1AB /* NMSFTPFile.m in Sources */,
+				8B00E157C1F7CFAF9641381EF1DD2FC2 /* NMSSH-dummy.m in Sources */,
+				EBDCC0A723C1C478F14AB2917E19701A /* NMSSHChannel.m in Sources */,
+				81B53124C082A6F1ABA78815ED12D993 /* NMSSHConfig.m in Sources */,
+				469A87DF1B45F4D2ADA551E3580BBBF3 /* NMSSHHostConfig.m in Sources */,
+				BC1D0BB1970421AF15DE1A5D1B23971F /* NMSSHLogger.m in Sources */,
+				B9276FB7D1429298ABEB5D911C0C3B9A /* NMSSHSession.m in Sources */,
+				8401B30FFF6B7667CA5159E78F3D8478 /* socket_helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54B0B8742E879C8EBE283FDA1B5E37BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19BDC21EE15809B9FB82D0142D4F347 /* Pods-KernBypassUP-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2F84DC2E2DB3628B17B3841F2837477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DABF20F73D27572CD97071A6D4DB9004 /* MBProgressHUD-dummy.m in Sources */,
+				70EE1C774C978E1876AE6CA1224E897D /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09691B7B944750EA93FA4EDD545E9684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 82B0A41D3031FF27D78E17B0A9A46FB0 /* MBProgressHUD */;
+			targetProxy = B5C2A85A7598DC170B66B435FBDCEFB7 /* PBXContainerItemProxy */;
+		};
+		6FDBCB5F965F9EA314D32F45BEF7F012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMSSH;
+			target = E36E3194AA9B06BC5873E083ED10B917 /* NMSSH */;
+			targetProxy = 1EF2952D92E41FB5F2AC96D9A8296905 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23EC583A0BEF6A30C18888DC4AC50D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CFFF9D483E6C840FF491B26899C03FF /* NMSSH.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
+				PRODUCT_MODULE_NAME = NMSSH;
+				PRODUCT_NAME = NMSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2957EC4C67CD05C6E82C3E9B6885085E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D77ACC83FE1B413F35B18B5C0A04D0D /* MBProgressHUD.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		866AEF2D306856FC5100026E91580C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4365B01C82D77CE616567306ED47CB22 /* Pods-KernBypassUP.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		938B5AE0007BB18E15FF5788213B57CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27D76B89472F02760D55DFB639BF5BA4 /* MBProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9EAE6C9A2B30372D0B08B31A07D9FAFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7E4EDC9AF7B512D8E0B1FB517E0672 /* Pods-KernBypassUP.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F85F4EB6CC0E655075902D690A67966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82B67FDEC0E5200F3AA7AA6D154BF84A /* NMSSH.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMSSH/NMSSH-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMSSH/NMSSH-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NMSSH/NMSSH.modulemap";
+				PRODUCT_MODULE_NAME = NMSSH;
+				PRODUCT_NAME = NMSSH;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49070A7F26B02B75758E2C02E3B1BCCC /* Build configuration list for PBXNativeTarget "Pods-KernBypassUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				866AEF2D306856FC5100026E91580C64 /* Debug */,
+				9EAE6C9A2B30372D0B08B31A07D9FAFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BBCD1F5C5BC6E0D4002E2D4AD574B7 /* Build configuration list for PBXNativeTarget "NMSSH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85F4EB6CC0E655075902D690A67966F /* Debug */,
+				23EC583A0BEF6A30C18888DC4AC50D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70191416B9573C7ABB42333A08FA2DE4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938B5AE0007BB18E15FF5788213B57CF /* Debug */,
+				2957EC4C67CD05C6E82C3E9B6885085E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

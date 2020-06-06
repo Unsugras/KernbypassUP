@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		838AD327248A592800B318F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AD326248A592800B318F4 /* AppDelegate.m */; };
+		838AD32A248A592800B318F4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AD329248A592800B318F4 /* SceneDelegate.m */; };
+		838AD32D248A592800B318F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AD32C248A592800B318F4 /* ViewController.m */; };
+		838AD330248A592800B318F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838AD32E248A592800B318F4 /* Main.storyboard */; };
+		838AD332248A592A00B318F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838AD331248A592A00B318F4 /* Assets.xcassets */; };
+		838AD335248A592A00B318F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838AD333248A592A00B318F4 /* LaunchScreen.storyboard */; };
+		838AD338248A592A00B318F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 838AD337248A592A00B318F4 /* main.m */; };
+		8505541DFB483BF0A0F15D02 /* Pods_KernBypassUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF6C474C587995C42E58957 /* Pods_KernBypassUP.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		838AD384248A5BEE00B318F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838AD33F248A5BEE00B318F4 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6EEC77F51858349E93EF74E23C115C64;
+			remoteInfo = NMSSH;
+		};
+		838AD386248A5BEE00B318F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838AD33F248A5BEE00B318F4 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 33F345EF813F763F656DF684D6E2A31E;
+			remoteInfo = "Pods-KernBypassUP";
+		};
+		838AD38D248AA31C00B318F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838AD33F248A5BEE00B318F4 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B8FAB0D627B17EDE1366984278705D9;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		838AD322248A592800B318F4 /* KernBypassUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KernBypassUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		838AD325248A592800B318F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		838AD326248A592800B318F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		838AD328248A592800B318F4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		838AD329248A592800B318F4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		838AD32B248A592800B318F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		838AD32C248A592800B318F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		838AD32F248A592800B318F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		838AD331248A592A00B318F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		838AD334248A592A00B318F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		838AD336248A592A00B318F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		838AD337248A592A00B318F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		838AD33F248A5BEE00B318F4 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Pods.xcodeproj; sourceTree = "<group>"; };
+		838AD344248A5BEE00B318F4 /* Pods-KernBypassUP-acknowledgements.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Pods-KernBypassUP-acknowledgements.markdown"; sourceTree = "<group>"; };
+		838AD345248A5BEE00B318F4 /* Pods-KernBypassUP.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KernBypassUP.modulemap"; sourceTree = "<group>"; };
+		838AD346248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Release-input-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-KernBypassUP-frameworks-Release-input-files.xcfilelist"; sourceTree = "<group>"; };
+		838AD347248A5BEE00B318F4 /* Pods-KernBypassUP-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pods-KernBypassUP-umbrella.h"; sourceTree = "<group>"; };
+		838AD348248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Debug-input-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-KernBypassUP-frameworks-Debug-input-files.xcfilelist"; sourceTree = "<group>"; };
+		838AD349248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Release-output-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-KernBypassUP-frameworks-Release-output-files.xcfilelist"; sourceTree = "<group>"; };
+		838AD34A248A5BEE00B318F4 /* Pods-KernBypassUP-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Pods-KernBypassUP-dummy.m"; sourceTree = "<group>"; };
+		838AD34B248A5BEE00B318F4 /* Pods-KernBypassUP.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KernBypassUP.debug.xcconfig"; sourceTree = "<group>"; };
+		838AD34C248A5BEE00B318F4 /* Pods-KernBypassUP.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Pods-KernBypassUP.release.xcconfig"; sourceTree = "<group>"; };
+		838AD34D248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Debug-output-files.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = "Pods-KernBypassUP-frameworks-Debug-output-files.xcfilelist"; sourceTree = "<group>"; };
+		838AD34E248A5BEE00B318F4 /* Pods-KernBypassUP-acknowledgements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-KernBypassUP-acknowledgements.plist"; sourceTree = "<group>"; };
+		838AD34F248A5BEE00B318F4 /* Pods-KernBypassUP-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pods-KernBypassUP-Info.plist"; sourceTree = "<group>"; };
+		838AD350248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "Pods-KernBypassUP-frameworks.sh"; sourceTree = "<group>"; };
+		838AD352248A5BEE00B318F4 /* NMSSH.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = NMSSH.debug.xcconfig; sourceTree = "<group>"; };
+		838AD353248A5BEE00B318F4 /* NMSSH-umbrella.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMSSH-umbrella.h"; sourceTree = "<group>"; };
+		838AD354248A5BEE00B318F4 /* NMSSH.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = NMSSH.modulemap; sourceTree = "<group>"; };
+		838AD355248A5BEE00B318F4 /* NMSSH-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMSSH-prefix.pch"; sourceTree = "<group>"; };
+		838AD356248A5BEE00B318F4 /* NMSSH-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NMSSH-dummy.m"; sourceTree = "<group>"; };
+		838AD357248A5BEE00B318F4 /* NMSSH.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = NMSSH.release.xcconfig; sourceTree = "<group>"; };
+		838AD358248A5BEE00B318F4 /* NMSSH-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NMSSH-Info.plist"; sourceTree = "<group>"; };
+		838AD359248A5BEE00B318F4 /* Manifest.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
+		838AD35C248A5BEE00B318F4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		838AD35F248A5BEE00B318F4 /* socket_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = socket_helper.h; sourceTree = "<group>"; };
+		838AD360248A5BEE00B318F4 /* NMSSHLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSSHLogger.m; sourceTree = "<group>"; };
+		838AD361248A5BEE00B318F4 /* socket_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = socket_helper.m; sourceTree = "<group>"; };
+		838AD362248A5BEE00B318F4 /* NMSSHLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHLogger.h; sourceTree = "<group>"; };
+		838AD363248A5BEE00B318F4 /* NMSSH+Protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMSSH+Protected.h"; sourceTree = "<group>"; };
+		838AD364248A5BEE00B318F4 /* NMSFTPFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSFTPFile.h; sourceTree = "<group>"; };
+		838AD365248A5BEE00B318F4 /* NMSSHConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHConfig.h; sourceTree = "<group>"; };
+		838AD366248A5BEE00B318F4 /* NMSSHHostConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHHostConfig.h; sourceTree = "<group>"; };
+		838AD367248A5BEE00B318F4 /* NMSSH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSH.h; sourceTree = "<group>"; };
+		838AD368248A5BEE00B318F4 /* NMSSHSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSSHSession.m; sourceTree = "<group>"; };
+		838AD369248A5BEE00B318F4 /* NMSFTP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSFTP.m; sourceTree = "<group>"; };
+		838AD36A248A5BEE00B318F4 /* NMSSHChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHChannel.h; sourceTree = "<group>"; };
+		838AD36B248A5BEE00B318F4 /* NMSSHConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSSHConfig.m; sourceTree = "<group>"; };
+		838AD36C248A5BEE00B318F4 /* NMSFTPFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSFTPFile.m; sourceTree = "<group>"; };
+		838AD36D248A5BEE00B318F4 /* NMSSHChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSSHChannel.m; sourceTree = "<group>"; };
+		838AD36E248A5BEE00B318F4 /* NMSSHSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHSession.h; sourceTree = "<group>"; };
+		838AD36F248A5BEE00B318F4 /* NMSFTP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSFTP.h; sourceTree = "<group>"; };
+		838AD371248A5BEE00B318F4 /* NMSSHChannelDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHChannelDelegate.h; sourceTree = "<group>"; };
+		838AD372248A5BEE00B318F4 /* NMSSHSessionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSHSessionDelegate.h; sourceTree = "<group>"; };
+		838AD373248A5BEE00B318F4 /* NMSSHHostConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSSHHostConfig.m; sourceTree = "<group>"; };
+		838AD374248A5BEE00B318F4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		838AD379248A5BEE00B318F4 /* libssh2_sftp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libssh2_sftp.h; sourceTree = "<group>"; };
+		838AD37A248A5BEE00B318F4 /* libssh2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libssh2.h; sourceTree = "<group>"; };
+		838AD37B248A5BEE00B318F4 /* libssh2_publickey.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libssh2_publickey.h; sourceTree = "<group>"; };
+		838AD37D248A5BEE00B318F4 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		838AD37E248A5BEE00B318F4 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		838AD37F248A5BEE00B318F4 /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssh2.a; sourceTree = "<group>"; };
+		838AD380248A5BEE00B318F4 /* NMSSH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NMSSH.h; sourceTree = "<group>"; };
+		8C5DECC76E4832C2C1DDFAF9 /* Pods-KernBypassUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KernBypassUP.debug.xcconfig"; path = "Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP.debug.xcconfig"; sourceTree = "<group>"; };
+		AEF6C474C587995C42E58957 /* Pods_KernBypassUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KernBypassUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9A190D479570662969C8632 /* Pods-KernBypassUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KernBypassUP.release.xcconfig"; path = "Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		838AD31F248A592800B318F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8505541DFB483BF0A0F15D02 /* Pods_KernBypassUP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AB674E2F566C806A38925D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C5DECC76E4832C2C1DDFAF9 /* Pods-KernBypassUP.debug.xcconfig */,
+				C9A190D479570662969C8632 /* Pods-KernBypassUP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		838AD319248A592800B318F4 = {
+			isa = PBXGroup;
+			children = (
+				838AD324248A592800B318F4 /* KernBypassUP */,
+				838AD323248A592800B318F4 /* Products */,
+				6AB674E2F566C806A38925D8 /* Pods */,
+				9B68D73473AAF4FAFE62093F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		838AD323248A592800B318F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				838AD322248A592800B318F4 /* KernBypassUP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		838AD324248A592800B318F4 /* KernBypassUP */ = {
+			isa = PBXGroup;
+			children = (
+				838AD325248A592800B318F4 /* AppDelegate.h */,
+				838AD326248A592800B318F4 /* AppDelegate.m */,
+				838AD328248A592800B318F4 /* SceneDelegate.h */,
+				838AD329248A592800B318F4 /* SceneDelegate.m */,
+				838AD32B248A592800B318F4 /* ViewController.h */,
+				838AD32C248A592800B318F4 /* ViewController.m */,
+				838AD32E248A592800B318F4 /* Main.storyboard */,
+				838AD331248A592A00B318F4 /* Assets.xcassets */,
+				838AD333248A592A00B318F4 /* LaunchScreen.storyboard */,
+				838AD336248A592A00B318F4 /* Info.plist */,
+				838AD337248A592A00B318F4 /* main.m */,
+			);
+			path = KernBypassUP;
+			sourceTree = "<group>";
+		};
+		838AD33E248A5BEE00B318F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				838AD33F248A5BEE00B318F4 /* Pods.xcodeproj */,
+				838AD342248A5BEE00B318F4 /* Target Support Files */,
+				838AD359248A5BEE00B318F4 /* Manifest.lock */,
+				838AD35A248A5BEE00B318F4 /* Local Podspecs */,
+				838AD35B248A5BEE00B318F4 /* NMSSH */,
+				838AD381248A5BEE00B318F4 /* Headers */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		838AD340248A5BEE00B318F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				838AD38E248AA31C00B318F4 /* MBProgressHUD.framework */,
+				838AD385248A5BEE00B318F4 /* NMSSH.framework */,
+				838AD387248A5BEE00B318F4 /* Pods_KernBypassUP.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		838AD342248A5BEE00B318F4 /* Target Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				838AD343248A5BEE00B318F4 /* Pods-KernBypassUP */,
+				838AD351248A5BEE00B318F4 /* NMSSH */,
+			);
+			path = "Target Support Files";
+			sourceTree = "<group>";
+		};
+		838AD343248A5BEE00B318F4 /* Pods-KernBypassUP */ = {
+			isa = PBXGroup;
+			children = (
+				838AD344248A5BEE00B318F4 /* Pods-KernBypassUP-acknowledgements.markdown */,
+				838AD345248A5BEE00B318F4 /* Pods-KernBypassUP.modulemap */,
+				838AD346248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Release-input-files.xcfilelist */,
+				838AD347248A5BEE00B318F4 /* Pods-KernBypassUP-umbrella.h */,
+				838AD348248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Debug-input-files.xcfilelist */,
+				838AD349248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Release-output-files.xcfilelist */,
+				838AD34A248A5BEE00B318F4 /* Pods-KernBypassUP-dummy.m */,
+				838AD34B248A5BEE00B318F4 /* Pods-KernBypassUP.debug.xcconfig */,
+				838AD34C248A5BEE00B318F4 /* Pods-KernBypassUP.release.xcconfig */,
+				838AD34D248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks-Debug-output-files.xcfilelist */,
+				838AD34E248A5BEE00B318F4 /* Pods-KernBypassUP-acknowledgements.plist */,
+				838AD34F248A5BEE00B318F4 /* Pods-KernBypassUP-Info.plist */,
+				838AD350248A5BEE00B318F4 /* Pods-KernBypassUP-frameworks.sh */,
+			);
+			path = "Pods-KernBypassUP";
+			sourceTree = "<group>";
+		};
+		838AD351248A5BEE00B318F4 /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				838AD352248A5BEE00B318F4 /* NMSSH.debug.xcconfig */,
+				838AD353248A5BEE00B318F4 /* NMSSH-umbrella.h */,
+				838AD354248A5BEE00B318F4 /* NMSSH.modulemap */,
+				838AD355248A5BEE00B318F4 /* NMSSH-prefix.pch */,
+				838AD356248A5BEE00B318F4 /* NMSSH-dummy.m */,
+				838AD357248A5BEE00B318F4 /* NMSSH.release.xcconfig */,
+				838AD358248A5BEE00B318F4 /* NMSSH-Info.plist */,
+			);
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		838AD35A248A5BEE00B318F4 /* Local Podspecs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Local Podspecs";
+			sourceTree = "<group>";
+		};
+		838AD35B248A5BEE00B318F4 /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				838AD35C248A5BEE00B318F4 /* LICENSE */,
+				838AD35D248A5BEE00B318F4 /* NMSSH */,
+				838AD374248A5BEE00B318F4 /* README.md */,
+				838AD375248A5BEE00B318F4 /* NMSSH-iOS */,
+			);
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		838AD35D248A5BEE00B318F4 /* NMSSH */ = {
+			isa = PBXGroup;
+			children = (
+				838AD35E248A5BEE00B318F4 /* Config */,
+				838AD364248A5BEE00B318F4 /* NMSFTPFile.h */,
+				838AD365248A5BEE00B318F4 /* NMSSHConfig.h */,
+				838AD366248A5BEE00B318F4 /* NMSSHHostConfig.h */,
+				838AD367248A5BEE00B318F4 /* NMSSH.h */,
+				838AD368248A5BEE00B318F4 /* NMSSHSession.m */,
+				838AD369248A5BEE00B318F4 /* NMSFTP.m */,
+				838AD36A248A5BEE00B318F4 /* NMSSHChannel.h */,
+				838AD36B248A5BEE00B318F4 /* NMSSHConfig.m */,
+				838AD36C248A5BEE00B318F4 /* NMSFTPFile.m */,
+				838AD36D248A5BEE00B318F4 /* NMSSHChannel.m */,
+				838AD36E248A5BEE00B318F4 /* NMSSHSession.h */,
+				838AD36F248A5BEE00B318F4 /* NMSFTP.h */,
+				838AD370248A5BEE00B318F4 /* Protocols */,
+				838AD373248A5BEE00B318F4 /* NMSSHHostConfig.m */,
+			);
+			path = NMSSH;
+			sourceTree = "<group>";
+		};
+		838AD35E248A5BEE00B318F4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				838AD35F248A5BEE00B318F4 /* socket_helper.h */,
+				838AD360248A5BEE00B318F4 /* NMSSHLogger.m */,
+				838AD361248A5BEE00B318F4 /* socket_helper.m */,
+				838AD362248A5BEE00B318F4 /* NMSSHLogger.h */,
+				838AD363248A5BEE00B318F4 /* NMSSH+Protected.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		838AD370248A5BEE00B318F4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				838AD371248A5BEE00B318F4 /* NMSSHChannelDelegate.h */,
+				838AD372248A5BEE00B318F4 /* NMSSHSessionDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		838AD375248A5BEE00B318F4 /* NMSSH-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				838AD376248A5BEE00B318F4 /* Libraries */,
+				838AD380248A5BEE00B318F4 /* NMSSH.h */,
+			);
+			path = "NMSSH-iOS";
+			sourceTree = "<group>";
+		};
+		838AD376248A5BEE00B318F4 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				838AD377248A5BEE00B318F4 /* include */,
+				838AD37C248A5BEE00B318F4 /* lib */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		838AD377248A5BEE00B318F4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				838AD378248A5BEE00B318F4 /* libssh2 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		838AD378248A5BEE00B318F4 /* libssh2 */ = {
+			isa = PBXGroup;
+			children = (
+				838AD379248A5BEE00B318F4 /* libssh2_sftp.h */,
+				838AD37A248A5BEE00B318F4 /* libssh2.h */,
+				838AD37B248A5BEE00B318F4 /* libssh2_publickey.h */,
+			);
+			path = libssh2;
+			sourceTree = "<group>";
+		};
+		838AD37C248A5BEE00B318F4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				838AD37D248A5BEE00B318F4 /* libcrypto.a */,
+				838AD37E248A5BEE00B318F4 /* libssl.a */,
+				838AD37F248A5BEE00B318F4 /* libssh2.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		838AD381248A5BEE00B318F4 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		9B68D73473AAF4FAFE62093F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				838AD33E248A5BEE00B318F4 /* Pods */,
+				AEF6C474C587995C42E58957 /* Pods_KernBypassUP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		838AD389248AA31C00B318F4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		838AD321248A592800B318F4 /* KernBypassUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 838AD33B248A592A00B318F4 /* Build configuration list for PBXNativeTarget "KernBypassUP" */;
+			buildPhases = (
+				92EE38F638158A1123E42A0C /* [CP] Check Pods Manifest.lock */,
+				838AD389248AA31C00B318F4 /* Headers */,
+				838AD31E248A592800B318F4 /* Sources */,
+				838AD31F248A592800B318F4 /* Frameworks */,
+				838AD320248A592800B318F4 /* Resources */,
+				3C99410F16BFFBF0098D37F1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KernBypassUP;
+			productName = KernBypassUP;
+			productReference = 838AD322248A592800B318F4 /* KernBypassUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		838AD31A248A592800B318F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = A2;
+				TargetAttributes = {
+					838AD321248A592800B318F4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 838AD31D248A592800B318F4 /* Build configuration list for PBXProject "KernBypassUP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 838AD319248A592800B318F4;
+			productRefGroup = 838AD323248A592800B318F4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 838AD340248A5BEE00B318F4 /* Products */;
+					ProjectRef = 838AD33F248A5BEE00B318F4 /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				838AD321248A592800B318F4 /* KernBypassUP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		838AD385248A5BEE00B318F4 /* NMSSH.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NMSSH.framework;
+			remoteRef = 838AD384248A5BEE00B318F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		838AD387248A5BEE00B318F4 /* Pods_KernBypassUP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_KernBypassUP.framework;
+			remoteRef = 838AD386248A5BEE00B318F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		838AD38E248AA31C00B318F4 /* MBProgressHUD.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MBProgressHUD.framework;
+			remoteRef = 838AD38D248AA31C00B318F4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		838AD320248A592800B318F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838AD335248A592A00B318F4 /* LaunchScreen.storyboard in Resources */,
+				838AD332248A592A00B318F4 /* Assets.xcassets in Resources */,
+				838AD330248A592800B318F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C99410F16BFFBF0098D37F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KernBypassUP/Pods-KernBypassUP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92EE38F638158A1123E42A0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KernBypassUP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		838AD31E248A592800B318F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838AD32D248A592800B318F4 /* ViewController.m in Sources */,
+				838AD327248A592800B318F4 /* AppDelegate.m in Sources */,
+				838AD338248A592A00B318F4 /* main.m in Sources */,
+				838AD32A248A592800B318F4 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		838AD32E248A592800B318F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838AD32F248A592800B318F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		838AD333248A592A00B318F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				838AD334248A592A00B318F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		838AD339248A592A00B318F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		838AD33A248A592A00B318F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		838AD33C248A592A00B318F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5DECC76E4832C2C1DDFAF9 /* Pods-KernBypassUP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV5643RSR;
+				INFOPLIST_FILE = KernBypassUP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.A2.KernBypassUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		838AD33D248A592A00B318F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A190D479570662969C8632 /* Pods-KernBypassUP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9SV5643RSR;
+				INFOPLIST_FILE = KernBypassUP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.A2.KernBypassUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		838AD31D248A592800B318F4 /* Build configuration list for PBXProject "KernBypassUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838AD339248A592A00B318F4 /* Debug */,
+				838AD33A248A592A00B318F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		838AD33B248A592A00B318F4 /* Build configuration list for PBXNativeTarget "KernBypassUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				838AD33C248A592A00B318F4 /* Debug */,
+				838AD33D248A592A00B318F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 838AD31A248A592800B318F4 /* Project object */;
+}
