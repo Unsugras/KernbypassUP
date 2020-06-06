@@ -115,7 +115,7 @@
                 }
             }else{
                  UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"执行失败"
-                                                                  message:@"连接失败，请检查被手机端是否开放22端口监听以及是否安装openSSH"
+                                                                  message:@"连接失败，请检查被手机端是否开放2222端口监听以及是否安装openSSH"
                                                                   preferredStyle:UIAlertControllerStyleAlert];
                  UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"俺晓得了!" style:UIAlertActionStyleDefault
                                                                      handler:^(UIAlertAction * action) {}];
